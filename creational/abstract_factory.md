@@ -121,9 +121,9 @@ func main() {
 
 	// I want to buy from apple
 	// change the brand name and see the result
-	apple, _ := getDeviceFactory("microsoft")
-	laptop := apple.GetLaptop()
-	mouse := apple.GetMouse()
+	appleCo, _ := getDeviceFactory("apple")
+	laptop := appleCo.GetLaptop()
+	mouse := appleCo.GetMouse()
 	appleBasketPrice := laptop.GetPrice() + mouse.GetPrice()
 	fmt.Println("You spent ", appleBasketPrice, " dollars.")
 	fmt.Println(laptop.GetInfo())
